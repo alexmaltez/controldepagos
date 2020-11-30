@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the alumnos_init() hook (in hooks/alumnos.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="alumnos-carnet-<%%VALUE(id)%%>" class="alumnos-carnet text-center"><%%VALUE(carnet)%%></td>
+		<td id="alumnos-nombre_completo-<%%VALUE(id)%%>" class="alumnos-nombre_completo text-center"><%%VALUE(nombre_completo)%%></td>
+		<td id="alumnos-facultad-<%%VALUE(id)%%>" class="alumnos-facultad text-center"><%%VALUE(facultad)%%></td>
+		<td id="alumnos-turno-<%%VALUE(id)%%>" class="alumnos-turno text-center"><%%VALUE(turno)%%></td>
+		<td id="alumnos-fecha_matri-<%%VALUE(id)%%>" class="alumnos-fecha_matri text-center"><%%VALUE(fecha_matri)%%></td>
+		<td id="alumnos-numero-<%%VALUE(id)%%>" class="alumnos-numero text-center"><%%VALUE(numero)%%></td>

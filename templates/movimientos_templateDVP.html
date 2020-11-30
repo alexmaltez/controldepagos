@@ -1,0 +1,67 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: ID -->
+		<div class="form-group movimientos-id" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<!-- Field: Carnet -->
+		<div class="form-group movimientos-carnet" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Carnet</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="carnet<%%RND1%%>"><%%COMBOTEXT(carnet)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Descripcion -->
+		<div class="form-group movimientos-descripcion" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Descripcion</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(descripcion)%%></div>
+			</div>
+		</div>
+		<!-- Field: Comentarios -->
+		<div class="form-group movimientos-comentarios" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Comentarios</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(comentarios)%%></div>
+			</div>
+		</div>
+		<!-- Field: Fecha pago -->
+		<div class="form-group movimientos-fecha_pago" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Fecha pago</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(fecha_pago)%%></div>
+			</div>
+		</div>
+		<!-- Field: Importe CS -->
+		<div class="form-group movimientos-importe_nio" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Importe CS</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(importe_nio)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tipo pago -->
+		<div class="form-group movimientos-tipo_pago" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tipo pago</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(tipo_pago)%%></div>
+			</div>
+		</div>
+	</fieldset>
+</div>

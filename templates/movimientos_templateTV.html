@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the movimientos_init() hook (in hooks/movimientos.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="movimientos-carnet-<%%VALUE(id)%%>" class="movimientos-carnet text-center"><%%SELECT%%><%%VALUE(carnet)%%><%%ENDSELECT%%></td>
+		<td id="movimientos-descripcion-<%%VALUE(id)%%>" class="movimientos-descripcion text-center"><%%SELECT%%><%%VALUE(descripcion)%%><%%ENDSELECT%%></td>
+		<td id="movimientos-comentarios-<%%VALUE(id)%%>" class="movimientos-comentarios text-center"><%%SELECT%%><%%VALUE(comentarios)%%><%%ENDSELECT%%></td>
+		<td id="movimientos-fecha_pago-<%%VALUE(id)%%>" class="movimientos-fecha_pago text-center"><%%SELECT%%><%%VALUE(fecha_pago)%%><%%ENDSELECT%%></td>
+		<td id="movimientos-importe_nio-<%%VALUE(id)%%>" class="movimientos-importe_nio text-center"><%%SELECT%%><%%VALUE(importe_nio)%%><%%ENDSELECT%%></td>
+		<td id="movimientos-tipo_pago-<%%VALUE(id)%%>" class="movimientos-tipo_pago text-center"><%%SELECT%%><%%VALUE(tipo_pago)%%><%%ENDSELECT%%></td>
